@@ -6,6 +6,7 @@
 
 :root {
     --gold: #d4af37;
+    --base-gold: #c5a558;
     --soft-gold: #d1b164;
     --deep-black: #050505;
     --card-black: #121212;
@@ -23,13 +24,6 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     margin: 0;
 }
-
-/* ❌ 삭제됨:
-html min-width
-body flex
-page-wrapper
-transform-origin
-*/
 
 /* =========================
    HEADER
@@ -73,11 +67,11 @@ transform-origin
 }
 
 .nav-link:hover {
-    color: var(--gold) !important;
+    color: var(--base-gold) !important;
 }
 
 .nav-link.highlight {
-    color: var(--gold) !important;
+    color: var(--base-gold) !important;
 }
 
 /* =========================
@@ -96,12 +90,12 @@ transform-origin
     background-size: cover;
     background-position: center 20%;
 
-    border-bottom: 1px solid var(--gold);
+    /*border-bottom: 1px solid var(--gold);*/
 }
 
 /* 타이틀 아래쪽 배치 */
 .hero-section .container {
-    margin-top: 180px;  /* 가슴선 근처 */
+    margin-top: 300px;  /* 가슴선 근처 */
 }
 
 .hero-title {
@@ -142,13 +136,13 @@ transform-origin
 }
 
 .card:hover {
-    border-color: var(--gold);
+    border-color: var(--base-gold);
     transform: translateY(-10px);
     box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15);
 }
 
 .card-s2 {
-    border: 1px solid var(--gold);
+    border: 1px solid var(--base-gold);
     background: linear-gradient(145deg, #121212 0%, #1a1a1a 100%);
 }
 
@@ -157,14 +151,14 @@ transform-origin
 ========================= */
 
 .gold-text {
-    color: var(--gold) !important;
+    color: var(--base-gold) !important;
     font-family: 'Cinzel', serif;
 }
 
 .btn-gold {
     background-color: transparent;
-    color: var(--gold);
-    border: 1px solid var(--gold);
+    color: var(--base-gold);
+    border: 1px solid var(--base-gold);
     font-family: 'Cinzel', serif;
     padding: 12px 35px;
     transition: 0.3s;
@@ -172,9 +166,9 @@ transform-origin
 }
 
 .btn-gold:hover {
-    background-color: var(--gold);
+    background-color: var(--base-gold);
     color: black;
-    box-shadow: 0 0 20px var(--gold);
+    box-shadow: 0 0 20px var(--base-gold);
 }
 
 /* =========================
@@ -190,10 +184,10 @@ transform-origin
 }
 
 .footer-link:hover {
-    color: var(--gold);
+    color: var(--base-gold);
 }
 
 .bi-gold {
-    color: var(--gold);
+    color: var(--base-gold);
     font-size: 2.2rem;
 }
