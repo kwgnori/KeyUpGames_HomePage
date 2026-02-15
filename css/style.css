@@ -2,12 +2,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Sans+KR:wght@300;400;700&display=swap');
 
 :root { 
-    --gold: #d4af37; 
-    --soft-gold: #f1d27c;
+    --gold: #d4af37;
+    --soft-gold: #dfc07a;
     --deep-black: #050505; 
     --card-black: #121212; 
     --text-gray: #e0e0e0;
     --secondary-gray: #94a3b8;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.site-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(6px);
+}
+
+.navbar {
+    padding: 1rem 0;
+}
+
+/* 로고 */
+.brand-logo {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+
+    background: linear-gradient(180deg, #f5d27a, #b68a1e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 메뉴 */
+.nav-link {
+    color: #ddd !important;
+    margin-left: 25px;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--gold) !important;
+}
+
+.nav-link.highlight {
+    color: var(--gold) !important;
 }
 
 /* 기본 레이아웃 */
@@ -17,13 +64,13 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     overflow-x: hidden;
     margin: 0;
-    transform: scale(0.75);
+    /* transform: scale(0.75); */
     transform-origin: top center;
 }
 
 
 
-/* Hero Section: 이미지 경로 수정 (../ 를 통해 css 폴더 밖으로 나감) */
+/* Hero Section*/
 .hero-section {
     height: 70vh;
     display: flex;
