@@ -1,0 +1,135 @@
+/* 폰트 및 변수 설정 */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Sans+KR:wght@300;400;700&display=swap');
+
+:root { 
+    --gold: #d4af37; 
+    --soft-gold: #f1d27c;
+    --deep-black: #050505; 
+    --card-black: #121212; 
+    --text-gray: #e0e0e0;
+    --secondary-gray: #94a3b8;
+}
+
+/* 기본 레이아웃 */
+body { 
+    background-color: var(--deep-black); 
+    color: var(--text-gray); 
+    font-family: 'Noto Sans KR', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    transform: scale(0.75);
+    transform-origin: top center;
+}
+
+
+
+/* Hero Section: 이미지 경로 수정 (../ 를 통해 css 폴더 밖으로 나감) */
+.hero-section {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* 경로를 ../images/bg_world2.jpg 로 수정했습니다 */
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(5,5,5,1)), 
+                url('../images/hero-bg.png'); 
+    background-size: cover;
+    background-position: center 20%;
+    border-bottom: 1px solid var(--gold);
+    padding-top: 120px; /* navbar 높이만큼 */
+}
+
+.hero-title {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(3rem, 8vw, 5rem);
+    font-weight: 700;
+    color: var(--gold);
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.8), 0 0 20px rgba(212, 175, 55, 0.4);
+    letter-spacing: 5px;
+}
+
+.hero-subtitle {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    color: var(--soft-gold);
+    letter-spacing: 3px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* 카드 디자인 */
+.card { 
+    background-color: var(--card-black); 
+    border: 1px solid #222; 
+    transition: all 0.4s ease;
+    position: relative;
+    border-radius: 0; /* 각진 골져스한 느낌 */
+}
+
+.card:hover { 
+    border-color: var(--gold);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15);
+}
+
+.card-s2 {
+    border: 1px solid var(--gold);
+    background: linear-gradient(145deg, #121212 0%, #1a1a1a 100%);
+}
+
+/* 텍스트 및 버튼 */
+.gold-text { 
+    color: var(--gold) !important; 
+    font-family: 'Cinzel', serif; 
+}
+
+.btn-gold {
+    background-color: transparent;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    font-family: 'Cinzel', serif;
+    padding: 12px 35px;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn-gold:hover {
+    background-color: var(--gold);
+    color: black;
+    box-shadow: 0 0 20px var(--gold);
+}
+
+/* 푸터 및 링크 */
+.footer-link {
+    color: #777;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: 0.3s;
+    font-family: 'Cinzel', serif;
+}
+
+.footer-link:hover { 
+    color: var(--gold); 
+}
+
+.bi-gold { 
+    color: var(--gold); 
+    font-size: 2.2rem; 
+}
+
+/* 개인정보처리방침 & 지원 페이지용 추가 스타일 */
+.content-card {
+    background-color: var(--card-black);
+    border: 1px solid #222;
+    padding: 2.5rem;
+}
+
+.back-link {
+    color: var(--gold);
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    text-shadow: 0 0 10px var(--gold);
+}
