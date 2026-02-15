@@ -176,7 +176,7 @@ body {
 ========================= */
 
 .footer-link {
-    color: #777;
+    color: #9c9c9c;
     text-decoration: none;
     font-size: 0.85rem;
     transition: 0.3s;
@@ -190,4 +190,8 @@ body {
 .bi-gold {
     color: var(--base-gold);
     font-size: 2.2rem;
+}
+
+.footer-copy {
+    color: #3a3a3a;
 }
