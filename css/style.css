@@ -57,6 +57,18 @@ body {
     margin-left: 4px;
 }
 
+/* Bootstrap hover override */
+.brand-logo:hover,
+.brand-logo:focus {
+    color: #c5a558;
+    text-decoration: none;
+}
+
+.brand-logo:hover span,
+.brand-logo:focus span {
+    color: #e6e6e6;
+}
+
 /* 메뉴 */
 
 .nav-link {
