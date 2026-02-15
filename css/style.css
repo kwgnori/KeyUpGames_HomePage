@@ -98,6 +98,10 @@ body {
     padding-top: 120px; /* navbar 높이만큼 */
 }
 
+.hero-section .container {
+    margin-top: 250px;
+}
+
 .hero-title {
     font-family: 'Cinzel', serif;
     font-weight: 600;
