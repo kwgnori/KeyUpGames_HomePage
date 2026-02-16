@@ -10,8 +10,8 @@
     --soft-gold: #d1b164;
     --deep-black: #050505;
     --card-black: #121212;
-    --text-gray: #e0e0e0;
-    --secondary-gray: #94a3b8;
+    --text-white: #e0e0e0;
+    --text-email: #cfcbb4;
 }
 
 /* =========================
@@ -20,7 +20,7 @@
 
 body {
     background-color: var(--deep-black);
-    color: var(--text-gray);
+    color: var(--text-white);
     font-family: 'Noto Sans KR', sans-serif;
     margin: 0;
 }
@@ -208,6 +208,7 @@ body {
     font-size: 0.85rem;
     transition: 0.3s;
     font-family: 'Cinzel', serif;
+    text-transform: none !important;
 }
 
 .footer-link:hover {
@@ -221,4 +222,12 @@ body {
 
 .footer-copy {
     color: #3a3a3a;
+}
+
+/* =========================
+   서포트 페이지
+========================= */
+.email-text {
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: 0.5px;
 }
