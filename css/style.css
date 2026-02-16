@@ -91,7 +91,7 @@ body {
 ========================= */
 
 .hero-section {
-    min-height: 700px; /* vh 제거 */
+    min-height: 800px; /* vh 제거 */
     display: flex;
     align-items: center;
     justify-content: center;
